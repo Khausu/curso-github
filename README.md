@@ -1,2 +1,2 @@
 # curso-github
-Esta es una prueba de repositorio en github! ! print hello
+Mi repositorio de prueba en GitHub.
