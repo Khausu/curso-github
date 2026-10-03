@@ -8,14 +8,20 @@ class Calculadora{
         return a - b;
     }
 
-    dividir(a,b){
-        if(b===0) { return null }
+    dividir(a, b){
+        if(b===0){ return null }
         return a / b;
     }
 
     multiplicar(a,b){
         return a * b;
     }
+
+    multiplicar2(a,b){
+        return a * b;
+    }
+
+    multiplicar3(a,b){
+        return a * b;
+    }
 }
-
-
