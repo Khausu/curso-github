@@ -1,0 +1,14 @@
+class Test {
+
+    constructor(){
+        this.calc = new Calculadora();
+    }
+
+    probarSumar(){
+        return this.calc.sumar(2, 3) === 5;
+    }
+
+    probarDividirEntreCero(){
+        return this.calc.dividir(5, 0) === null;
+    }
+}
