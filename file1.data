@@ -24,4 +24,9 @@ class Calculadora{
     potencia(a,b){
         return a ** b;
     }
+
+    modulo(a,b){
+        if(b===0){ return null }
+        return a % b;
+    }
 }
