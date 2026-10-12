@@ -1,2 +1,10 @@
-Class Test {
+class Test {
+
+    constructor(){
+        this.calc = new Calculadora();
+    }
+
+    probarSumar(){
+        return this.calc.sumar(2, 3) === 5;
+    }
 }
