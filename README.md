@@ -8,3 +8,10 @@ La clase `Calculadora` (en `file1.data`) incluye:
 - sumar, restar, multiplicar, dividir
 - potencia, modulo, raizCuadrada
 - valorAbsoluto, promedio, porcentaje
+
+## Ramas
+
+- `main`: version estable
+- `dev`: desarrollo
+- `release/*`: preparacion de versiones
+- `feature/*`: nuevas funcionalidades
