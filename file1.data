@@ -34,4 +34,8 @@ class Calculadora{
         if(a<0){ return null }
         return Math.sqrt(a);
     }
+
+    valorAbsoluto(a){
+        return Math.abs(a);
+    }
 }
