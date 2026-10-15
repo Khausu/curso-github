@@ -43,4 +43,8 @@ class Test {
     probarFactorial(){
         return this.calc.factorial(5) === 120 && this.calc.factorial(-1) === null;
     }
+
+    probarEsPar(){
+        return this.calc.esPar(8) === true && this.calc.esPar(7) === false;
+    }
 }
