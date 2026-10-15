@@ -7,7 +7,13 @@ La clase `Calculadora` (en `file1.data`) incluye:
 
 - sumar, restar, multiplicar, dividir
 - potencia, modulo, raizCuadrada
-- valorAbsoluto, promedio, porcentaje
+- valorAbsoluto, promedio, porcentaje, factorial
+
+## Pruebas
+
+La clase `Test` (en `classes/Test.data`) cubre sumar, restar, multiplicar,
+dividir entre cero, potencia, modulo entre cero, raiz cuadrada negativa,
+promedio, porcentaje y factorial.
 
 ## Ramas
 
