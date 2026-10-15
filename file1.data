@@ -47,4 +47,11 @@ class Calculadora{
     porcentaje(valor,pct){
         return valor * pct / 100;
     }
+
+    factorial(n){
+        if(n<0 || !Number.isInteger(n)){ return null }
+        let r = 1;
+        for(let i = 2; i <= n; i++){ r *= i; }
+        return r;
+    }
 }
