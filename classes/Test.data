@@ -59,4 +59,8 @@ class Test {
     probarMinimo(){
         return this.calc.minimo(3, 7, 1) === 1;
     }
+
+    probarFibonacci(){
+        return this.calc.fibonacci(10) === 55;
+    }
 }
