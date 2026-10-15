@@ -35,4 +35,8 @@ class Test {
     probarPromedio(){
         return this.calc.promedio(2, 4, 6) === 4;
     }
+
+    probarPorcentaje(){
+        return this.calc.porcentaje(200, 15) === 30;
+    }
 }
