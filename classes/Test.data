@@ -11,4 +11,36 @@ class Test {
     probarDividirEntreCero(){
         return this.calc.dividir(5, 0) === null;
     }
+
+    probarRestar(){
+        return this.calc.restar(10, 4) === 6;
+    }
+
+    probarMultiplicar(){
+        return this.calc.multiplicar(3, 4) === 12;
+    }
+
+    probarPotencia(){
+        return this.calc.potencia(2, 10) === 1024;
+    }
+
+    probarModuloEntreCero(){
+        return this.calc.modulo(7, 0) === null;
+    }
+
+    probarRaizCuadradaNegativa(){
+        return this.calc.raizCuadrada(-9) === null;
+    }
+
+    probarPromedio(){
+        return this.calc.promedio(2, 4, 6) === 4;
+    }
+
+    probarPorcentaje(){
+        return this.calc.porcentaje(200, 15) === 30;
+    }
+
+    probarFactorial(){
+        return this.calc.factorial(5) === 120 && this.calc.factorial(-1) === null;
+    }
 }
