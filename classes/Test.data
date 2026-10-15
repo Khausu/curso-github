@@ -27,4 +27,8 @@ class Test {
     probarModuloEntreCero(){
         return this.calc.modulo(7, 0) === null;
     }
+
+    probarRaizCuadradaNegativa(){
+        return this.calc.raizCuadrada(-9) === null;
+    }
 }
