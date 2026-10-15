@@ -47,4 +47,8 @@ class Test {
     probarEsPar(){
         return this.calc.esPar(8) === true && this.calc.esPar(7) === false;
     }
+
+    probarEsPrimo(){
+        return this.calc.esPrimo(13) === true && this.calc.esPrimo(12) === false;
+    }
 }
