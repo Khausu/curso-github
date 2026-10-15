@@ -31,4 +31,8 @@ class Test {
     probarRaizCuadradaNegativa(){
         return this.calc.raizCuadrada(-9) === null;
     }
+
+    probarPromedio(){
+        return this.calc.promedio(2, 4, 6) === 4;
+    }
 }
