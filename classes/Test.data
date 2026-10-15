@@ -51,4 +51,8 @@ class Test {
     probarEsPrimo(){
         return this.calc.esPrimo(13) === true && this.calc.esPrimo(12) === false;
     }
+
+    probarMaximo(){
+        return this.calc.maximo(3, 7, 1) === 7;
+    }
 }
