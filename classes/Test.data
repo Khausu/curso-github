@@ -55,4 +55,8 @@ class Test {
     probarMaximo(){
         return this.calc.maximo(3, 7, 1) === 7;
     }
+
+    probarMinimo(){
+        return this.calc.minimo(3, 7, 1) === 1;
+    }
 }
