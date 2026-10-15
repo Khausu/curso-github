@@ -15,4 +15,8 @@ class Test {
     probarRestar(){
         return this.calc.restar(10, 4) === 6;
     }
+
+    probarMultiplicar(){
+        return this.calc.multiplicar(3, 4) === 12;
+    }
 }
