@@ -11,4 +11,8 @@ class Test {
     probarDividirEntreCero(){
         return this.calc.dividir(5, 0) === null;
     }
+
+    probarRestar(){
+        return this.calc.restar(10, 4) === 6;
+    }
 }
