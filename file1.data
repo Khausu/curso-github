@@ -66,4 +66,9 @@ class Calculadora{
         }
         return true;
     }
+
+    maximo(...nums){
+        if(nums.length===0){ return null }
+        return Math.max(...nums);
+    }
 }
