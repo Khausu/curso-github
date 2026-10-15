@@ -19,4 +19,8 @@ class Test {
     probarMultiplicar(){
         return this.calc.multiplicar(3, 4) === 12;
     }
+
+    probarPotencia(){
+        return this.calc.potencia(2, 10) === 1024;
+    }
 }
