@@ -39,4 +39,8 @@ class Test {
     probarPorcentaje(){
         return this.calc.porcentaje(200, 15) === 30;
     }
+
+    probarFactorial(){
+        return this.calc.factorial(5) === 120 && this.calc.factorial(-1) === null;
+    }
 }
