@@ -23,4 +23,8 @@ class Test {
     probarPotencia(){
         return this.calc.potencia(2, 10) === 1024;
     }
+
+    probarModuloEntreCero(){
+        return this.calc.modulo(7, 0) === null;
+    }
 }
