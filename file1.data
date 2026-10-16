@@ -54,4 +54,33 @@ class Calculadora{
         for(let i = 2; i <= n; i++){ r *= i; }
         return r;
     }
+
+    esPar(n){
+        return n % 2 === 0;
+    }
+
+    esPrimo(n){
+        if(n<2 || !Number.isInteger(n)){ return false }
+        for(let i=2; i*i<=n; i++){
+            if(n % i === 0){ return false }
+        }
+        return true;
+    }
+
+    maximo(...nums){
+        if(nums.length===0){ return null }
+        return Math.max(...nums);
+    }
+
+    minimo(...nums){
+        if(nums.length===0){ return null }
+        return Math.min(...nums);
+    }
+
+    fibonacci(n){
+        if(n<0 || !Number.isInteger(n)){ return null }
+        let a=0, b=1;
+        for(let i=0; i<n; i++){ [a,b]=[b,a+b]; }
+        return a;
+    }
 }
