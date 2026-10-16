@@ -79,4 +79,8 @@ class Test {
     probarEsDivisible(){
         return this.calc.esDivisible(10, 5) === true && this.calc.esDivisible(10, 3) === false;
     }
+
+    probarRaizCubica(){
+        return this.calc.raizCubica(27) === 3;
+    }
 }
