@@ -75,4 +75,8 @@ class Test {
     probarRedondear(){
         return this.calc.redondear(3.14159, 2) === 3.14;
     }
+
+    probarEsDivisible(){
+        return this.calc.esDivisible(10, 5) === true && this.calc.esDivisible(10, 3) === false;
+    }
 }
