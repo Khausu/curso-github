@@ -106,4 +106,8 @@ class Calculadora{
         if(b===0){ return false }
         return a % b === 0;
     }
+
+    raizCubica(a){
+        return Math.cbrt(a);
+    }
 }
