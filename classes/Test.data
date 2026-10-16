@@ -71,4 +71,8 @@ class Test {
     probarMcm(){
         return this.calc.mcm(4, 6) === 12;
     }
+
+    probarRedondear(){
+        return this.calc.redondear(3.14159, 2) === 3.14;
+    }
 }
