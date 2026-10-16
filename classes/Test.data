@@ -63,4 +63,8 @@ class Test {
     probarFibonacci(){
         return this.calc.fibonacci(10) === 55;
     }
+
+    probarMcd(){
+        return this.calc.mcd(12, 18) === 6;
+    }
 }
