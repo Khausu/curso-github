@@ -67,4 +67,8 @@ class Test {
     probarMcd(){
         return this.calc.mcd(12, 18) === 6;
     }
+
+    probarMcm(){
+        return this.calc.mcm(4, 6) === 12;
+    }
 }
