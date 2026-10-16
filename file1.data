@@ -101,4 +101,9 @@ class Calculadora{
         const f = 10 ** decimales;
         return Math.round(n * f) / f;
     }
+
+    esDivisible(a,b){
+        if(b===0){ return false }
+        return a % b === 0;
+    }
 }
