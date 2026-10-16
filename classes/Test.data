@@ -63,4 +63,24 @@ class Test {
     probarFibonacci(){
         return this.calc.fibonacci(10) === 55;
     }
+
+    probarMcd(){
+        return this.calc.mcd(12, 18) === 6;
+    }
+
+    probarMcm(){
+        return this.calc.mcm(4, 6) === 12;
+    }
+
+    probarRedondear(){
+        return this.calc.redondear(3.14159, 2) === 3.14;
+    }
+
+    probarEsDivisible(){
+        return this.calc.esDivisible(10, 5) === true && this.calc.esDivisible(10, 3) === false;
+    }
+
+    probarRaizCubica(){
+        return this.calc.raizCubica(27) === 3;
+    }
 }
