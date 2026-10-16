@@ -96,4 +96,9 @@ class Calculadora{
         if(a===0 || b===0){ return 0 }
         return Math.abs(a*b) / this.mcd(a,b);
     }
+
+    redondear(n, decimales=0){
+        const f = 10 ** decimales;
+        return Math.round(n * f) / f;
+    }
 }
