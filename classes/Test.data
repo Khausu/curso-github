@@ -83,4 +83,8 @@ class Test {
     probarRaizCubica(){
         return this.calc.raizCubica(27) === 3;
     }
+
+    probarEsEntero(){
+        return this.calc.esEntero(4) === true && this.calc.esEntero(4.5) === false;
+    }
 }
