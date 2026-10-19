@@ -128,4 +128,8 @@ class Calculadora{
         const sumaProductos = valores.reduce((t,v,i) => t + v*pesos[i], 0);
         return sumaProductos / sumaPesos;
     }
+
+    celsiusAFahrenheit(c){
+        return c * 9/5 + 32;
+    }
 }
