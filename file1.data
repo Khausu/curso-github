@@ -110,4 +110,30 @@ class Calculadora{
     raizCubica(a){
         return Math.cbrt(a);
     }
+
+    esEntero(n){
+        return Number.isInteger(n);
+    }
+
+    signo(n){
+        if(n>0){ return 1 }
+        if(n<0){ return -1 }
+        return 0;
+    }
+
+    promedioPonderado(valores, pesos){
+        if(valores.length===0 || valores.length!==pesos.length){ return null }
+        const sumaPesos = pesos.reduce((t,p) => t + p, 0);
+        if(sumaPesos===0){ return null }
+        const sumaProductos = valores.reduce((t,v,i) => t + v*pesos[i], 0);
+        return sumaProductos / sumaPesos;
+    }
+
+    celsiusAFahrenheit(c){
+        return c * 9/5 + 32;
+    }
+
+    fahrenheitACelsius(f){
+        return (f - 32) * 5/9;
+    }
 }
