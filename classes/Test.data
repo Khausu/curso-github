@@ -99,4 +99,8 @@ class Test {
     probarCelsiusAFahrenheit(){
         return this.calc.celsiusAFahrenheit(0) === 32 && this.calc.celsiusAFahrenheit(100) === 212;
     }
+
+    probarFahrenheitACelsius(){
+        return this.calc.fahrenheitACelsius(32) === 0 && this.calc.fahrenheitACelsius(212) === 100;
+    }
 }
