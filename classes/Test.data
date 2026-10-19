@@ -87,4 +87,8 @@ class Test {
     probarEsEntero(){
         return this.calc.esEntero(4) === true && this.calc.esEntero(4.5) === false;
     }
+
+    probarSigno(){
+        return this.calc.signo(-5) === -1 && this.calc.signo(5) === 1 && this.calc.signo(0) === 0;
+    }
 }
