@@ -110,4 +110,8 @@ class Calculadora{
     raizCubica(a){
         return Math.cbrt(a);
     }
+
+    esEntero(n){
+        return Number.isInteger(n);
+    }
 }
