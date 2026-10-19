@@ -95,4 +95,8 @@ class Test {
     probarPromedioPonderado(){
         return this.calc.promedioPonderado([80, 90], [1, 3]) === 87.5;
     }
+
+    probarCelsiusAFahrenheit(){
+        return this.calc.celsiusAFahrenheit(0) === 32 && this.calc.celsiusAFahrenheit(100) === 212;
+    }
 }
