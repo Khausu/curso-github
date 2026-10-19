@@ -91,4 +91,8 @@ class Test {
     probarSigno(){
         return this.calc.signo(-5) === -1 && this.calc.signo(5) === 1 && this.calc.signo(0) === 0;
     }
+
+    probarPromedioPonderado(){
+        return this.calc.promedioPonderado([80, 90], [1, 3]) === 87.5;
+    }
 }
