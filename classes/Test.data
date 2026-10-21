@@ -115,4 +115,8 @@ class Test {
     probarInvertirNumero(){
         return this.calc.invertirNumero(123) === 321 && this.calc.invertirNumero(-45) === -54;
     }
+
+    probarDecimalABinario(){
+        return this.calc.decimalABinario(10) === "1010";
+    }
 }
