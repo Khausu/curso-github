@@ -146,4 +146,9 @@ class Calculadora{
         }
         return suma;
     }
+
+    esPalindromoNumerico(n){
+        const texto = Math.abs(Math.trunc(n)).toString();
+        return texto === texto.split("").reverse().join("");
+    }
 }
