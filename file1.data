@@ -151,4 +151,10 @@ class Calculadora{
         const texto = Math.abs(Math.trunc(n)).toString();
         return texto === texto.split("").reverse().join("");
     }
+
+    invertirNumero(n){
+        const signo = n < 0 ? -1 : 1;
+        const invertido = Math.abs(Math.trunc(n)).toString().split("").reverse().join("");
+        return signo * parseInt(invertido, 10);
+    }
 }
