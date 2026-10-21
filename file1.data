@@ -162,4 +162,9 @@ class Calculadora{
         if(n < 0 || !Number.isInteger(n)){ return null }
         return n.toString(2);
     }
+
+    binarioADecimal(bin){
+        if(!/^[01]+$/.test(bin)){ return null }
+        return parseInt(bin, 2);
+    }
 }
