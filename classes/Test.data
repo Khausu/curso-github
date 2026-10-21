@@ -111,4 +111,8 @@ class Test {
     probarEsPalindromoNumerico(){
         return this.calc.esPalindromoNumerico(1221) === true && this.calc.esPalindromoNumerico(123) === false;
     }
+
+    probarInvertirNumero(){
+        return this.calc.invertirNumero(123) === 321 && this.calc.invertirNumero(-45) === -54;
+    }
 }
