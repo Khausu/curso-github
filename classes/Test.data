@@ -107,4 +107,8 @@ class Test {
     probarSumaDigitos(){
         return this.calc.sumaDigitos(1234) === 10;
     }
+
+    probarEsPalindromoNumerico(){
+        return this.calc.esPalindromoNumerico(1221) === true && this.calc.esPalindromoNumerico(123) === false;
+    }
 }
