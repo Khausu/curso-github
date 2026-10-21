@@ -103,4 +103,8 @@ class Test {
     probarFahrenheitACelsius(){
         return this.calc.fahrenheitACelsius(32) === 0 && this.calc.fahrenheitACelsius(212) === 100;
     }
+
+    probarSumaDigitos(){
+        return this.calc.sumaDigitos(1234) === 10;
+    }
 }
