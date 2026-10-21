@@ -119,4 +119,8 @@ class Test {
     probarDecimalABinario(){
         return this.calc.decimalABinario(10) === "1010";
     }
+
+    probarBinarioADecimal(){
+        return this.calc.binarioADecimal("1010") === 10;
+    }
 }
