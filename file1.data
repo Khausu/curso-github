@@ -157,4 +157,9 @@ class Calculadora{
         const invertido = Math.abs(Math.trunc(n)).toString().split("").reverse().join("");
         return signo * parseInt(invertido, 10);
     }
+
+    decimalABinario(n){
+        if(n < 0 || !Number.isInteger(n)){ return null }
+        return n.toString(2);
+    }
 }
