@@ -127,4 +127,8 @@ class Test {
     probarEsCuadradoPerfecto(){
         return this.calc.esCuadradoPerfecto(16) === true && this.calc.esCuadradoPerfecto(15) === false;
     }
+
+    probarSumaDivisores(){
+        return this.calc.sumaDivisores(6) === 12;
+    }
 }
