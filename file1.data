@@ -192,4 +192,9 @@ class Calculadora{
     interpolar(a, b, t){
         return a + (b - a) * t;
     }
+
+    limitar(valor, min, max){
+        if(min > max){ return null }
+        return Math.min(Math.max(valor, min), max);
+    }
 }
