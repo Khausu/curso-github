@@ -173,4 +173,14 @@ class Calculadora{
         const raiz = Math.sqrt(n);
         return raiz === Math.trunc(raiz);
     }
+
+    sumaDivisores(n){
+        n = Math.abs(Math.trunc(n));
+        if(n === 0){ return 0 }
+        let suma = 0;
+        for(let i = 1; i <= n; i++){
+            if(n % i === 0){ suma += i; }
+        }
+        return suma;
+    }
 }
