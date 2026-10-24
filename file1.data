@@ -183,4 +183,9 @@ class Calculadora{
         }
         return suma;
     }
+
+    esNumeroPerfecto(n){
+        if(n < 1 || !Number.isInteger(n)){ return false }
+        return this.sumaDivisores(n) === n * 2;
+    }
 }
