@@ -123,4 +123,8 @@ class Test {
     probarBinarioADecimal(){
         return this.calc.binarioADecimal("1010") === 10;
     }
+
+    probarEsCuadradoPerfecto(){
+        return this.calc.esCuadradoPerfecto(16) === true && this.calc.esCuadradoPerfecto(15) === false;
+    }
 }
