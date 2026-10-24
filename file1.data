@@ -167,4 +167,10 @@ class Calculadora{
         if(!/^[01]+$/.test(bin)){ return null }
         return parseInt(bin, 2);
     }
+
+    esCuadradoPerfecto(n){
+        if(n < 0 || !Number.isInteger(n)){ return false }
+        const raiz = Math.sqrt(n);
+        return raiz === Math.trunc(raiz);
+    }
 }
