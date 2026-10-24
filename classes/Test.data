@@ -135,4 +135,8 @@ class Test {
     probarEsNumeroPerfecto(){
         return this.calc.esNumeroPerfecto(28) === true && this.calc.esNumeroPerfecto(10) === false;
     }
+
+    probarInterpolar(){
+        return this.calc.interpolar(0, 10, 0.5) === 5;
+    }
 }
