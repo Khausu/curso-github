@@ -139,4 +139,8 @@ class Test {
     probarInterpolar(){
         return this.calc.interpolar(0, 10, 0.5) === 5;
     }
+
+    probarLimitar(){
+        return this.calc.limitar(15, 0, 10) === 10 && this.calc.limitar(-5, 0, 10) === 0;
+    }
 }
