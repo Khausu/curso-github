@@ -123,4 +123,24 @@ class Test {
     probarBinarioADecimal(){
         return this.calc.binarioADecimal("1010") === 10;
     }
+
+    probarEsCuadradoPerfecto(){
+        return this.calc.esCuadradoPerfecto(16) === true && this.calc.esCuadradoPerfecto(15) === false;
+    }
+
+    probarSumaDivisores(){
+        return this.calc.sumaDivisores(6) === 12;
+    }
+
+    probarEsNumeroPerfecto(){
+        return this.calc.esNumeroPerfecto(28) === true && this.calc.esNumeroPerfecto(10) === false;
+    }
+
+    probarInterpolar(){
+        return this.calc.interpolar(0, 10, 0.5) === 5;
+    }
+
+    probarLimitar(){
+        return this.calc.limitar(15, 0, 10) === 10 && this.calc.limitar(-5, 0, 10) === 0;
+    }
 }
