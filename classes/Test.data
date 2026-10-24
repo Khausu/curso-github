@@ -131,4 +131,8 @@ class Test {
     probarSumaDivisores(){
         return this.calc.sumaDivisores(6) === 12;
     }
+
+    probarEsNumeroPerfecto(){
+        return this.calc.esNumeroPerfecto(28) === true && this.calc.esNumeroPerfecto(10) === false;
+    }
 }
