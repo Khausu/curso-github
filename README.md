@@ -13,6 +13,7 @@ La clase `Calculadora` (en `file1.data`) incluye:
 - esEntero, signo, promedioPonderado, celsiusAFahrenheit, fahrenheitACelsius
 - sumaDigitos, esPalindromoNumerico, invertirNumero, decimalABinario, binarioADecimal
 - esCuadradoPerfecto, sumaDivisores, esNumeroPerfecto, interpolar, limitar
+- gradosARadianes, radianesAGrados, permutaciones, combinaciones, esFibonacci
 
 ## Pruebas
 
@@ -22,7 +23,8 @@ promedio, porcentaje, factorial, esPar, esPrimo, maximo, minimo, fibonacci, mcd,
 redondear, esDivisible, raizCubica, esEntero, signo, promedioPonderado,
 celsiusAFahrenheit, fahrenheitACelsius, sumaDigitos, esPalindromoNumerico,
 invertirNumero, decimalABinario, binarioADecimal, esCuadradoPerfecto,
-sumaDivisores, esNumeroPerfecto, interpolar y limitar.
+sumaDivisores, esNumeroPerfecto, interpolar, limitar, gradosARadianes,
+radianesAGrados, permutaciones, combinaciones y esFibonacci.
 
 ## Ramas
 
