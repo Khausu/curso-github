@@ -201,4 +201,8 @@ class Calculadora{
     gradosARadianes(g){
         return g * Math.PI / 180;
     }
+
+    radianesAGrados(r){
+        return r * 180 / Math.PI;
+    }
 }
