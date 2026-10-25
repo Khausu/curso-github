@@ -155,4 +155,8 @@ class Test {
     probarPermutaciones(){
         return this.calc.permutaciones(5, 2) === 20;
     }
+
+    probarCombinaciones(){
+        return this.calc.combinaciones(5, 2) === 10;
+    }
 }
