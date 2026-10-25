@@ -147,4 +147,8 @@ class Test {
     probarGradosARadianes(){
         return this.calc.gradosARadianes(180) === Math.PI;
     }
+
+    probarRadianesAGrados(){
+        return this.calc.radianesAGrados(Math.PI) === 180;
+    }
 }
