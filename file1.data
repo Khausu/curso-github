@@ -205,4 +205,9 @@ class Calculadora{
     radianesAGrados(r){
         return r * 180 / Math.PI;
     }
+
+    permutaciones(n, r){
+        if(n < 0 || r < 0 || r > n || !Number.isInteger(n) || !Number.isInteger(r)){ return null }
+        return this.factorial(n) / this.factorial(n - r);
+    }
 }
