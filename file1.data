@@ -210,4 +210,9 @@ class Calculadora{
         if(n < 0 || r < 0 || r > n || !Number.isInteger(n) || !Number.isInteger(r)){ return null }
         return this.factorial(n) / this.factorial(n - r);
     }
+
+    combinaciones(n, r){
+        if(n < 0 || r < 0 || r > n || !Number.isInteger(n) || !Number.isInteger(r)){ return null }
+        return this.permutaciones(n, r) / this.factorial(r);
+    }
 }
