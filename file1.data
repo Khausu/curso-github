@@ -197,4 +197,8 @@ class Calculadora{
         if(min > max){ return null }
         return Math.min(Math.max(valor, min), max);
     }
+
+    gradosARadianes(g){
+        return g * Math.PI / 180;
+    }
 }
