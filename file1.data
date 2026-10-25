@@ -215,4 +215,13 @@ class Calculadora{
         if(n < 0 || r < 0 || r > n || !Number.isInteger(n) || !Number.isInteger(r)){ return null }
         return this.permutaciones(n, r) / this.factorial(r);
     }
+
+    esFibonacci(n){
+        if(n < 0 || !Number.isInteger(n)){ return false }
+        let a = 0, b = 1;
+        while(a < n){
+            [a, b] = [b, a + b];
+        }
+        return a === n;
+    }
 }
