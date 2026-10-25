@@ -197,4 +197,31 @@ class Calculadora{
         if(min > max){ return null }
         return Math.min(Math.max(valor, min), max);
     }
+
+    gradosARadianes(g){
+        return g * Math.PI / 180;
+    }
+
+    radianesAGrados(r){
+        return r * 180 / Math.PI;
+    }
+
+    permutaciones(n, r){
+        if(n < 0 || r < 0 || r > n || !Number.isInteger(n) || !Number.isInteger(r)){ return null }
+        return this.factorial(n) / this.factorial(n - r);
+    }
+
+    combinaciones(n, r){
+        if(n < 0 || r < 0 || r > n || !Number.isInteger(n) || !Number.isInteger(r)){ return null }
+        return this.permutaciones(n, r) / this.factorial(r);
+    }
+
+    esFibonacci(n){
+        if(n < 0 || !Number.isInteger(n)){ return false }
+        let a = 0, b = 1;
+        while(a < n){
+            [a, b] = [b, a + b];
+        }
+        return a === n;
+    }
 }

@@ -143,4 +143,24 @@ class Test {
     probarLimitar(){
         return this.calc.limitar(15, 0, 10) === 10 && this.calc.limitar(-5, 0, 10) === 0;
     }
+
+    probarGradosARadianes(){
+        return this.calc.gradosARadianes(180) === Math.PI;
+    }
+
+    probarRadianesAGrados(){
+        return this.calc.radianesAGrados(Math.PI) === 180;
+    }
+
+    probarPermutaciones(){
+        return this.calc.permutaciones(5, 2) === 20;
+    }
+
+    probarCombinaciones(){
+        return this.calc.combinaciones(5, 2) === 10;
+    }
+
+    probarEsFibonacci(){
+        return this.calc.esFibonacci(13) === true && this.calc.esFibonacci(14) === false;
+    }
 }
