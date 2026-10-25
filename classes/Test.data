@@ -159,4 +159,8 @@ class Test {
     probarCombinaciones(){
         return this.calc.combinaciones(5, 2) === 10;
     }
+
+    probarEsFibonacci(){
+        return this.calc.esFibonacci(13) === true && this.calc.esFibonacci(14) === false;
+    }
 }
