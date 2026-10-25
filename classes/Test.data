@@ -151,4 +151,8 @@ class Test {
     probarRadianesAGrados(){
         return this.calc.radianesAGrados(Math.PI) === 180;
     }
+
+    probarPermutaciones(){
+        return this.calc.permutaciones(5, 2) === 20;
+    }
 }
