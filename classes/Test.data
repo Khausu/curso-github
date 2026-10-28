@@ -163,4 +163,8 @@ class Test {
     probarEsFibonacci(){
         return this.calc.esFibonacci(13) === true && this.calc.esFibonacci(14) === false;
     }
+
+    probarHipotenusa(){
+        return this.calc.hipotenusa(3, 4) === 5;
+    }
 }
