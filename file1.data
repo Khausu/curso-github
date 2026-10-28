@@ -238,4 +238,9 @@ class Calculadora{
         if(r < 0){ return null }
         return 2 * Math.PI * r;
     }
+
+    areaRectangulo(a, b){
+        if(a < 0 || b < 0){ return null }
+        return a * b;
+    }
 }
