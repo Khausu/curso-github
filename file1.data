@@ -224,4 +224,28 @@ class Calculadora{
         }
         return a === n;
     }
+
+    hipotenusa(a, b){
+        return Math.sqrt(a ** 2 + b ** 2);
+    }
+
+    areaCirculo(r){
+        if(r < 0){ return null }
+        return Math.PI * r ** 2;
+    }
+
+    perimetroCirculo(r){
+        if(r < 0){ return null }
+        return 2 * Math.PI * r;
+    }
+
+    areaRectangulo(a, b){
+        if(a < 0 || b < 0){ return null }
+        return a * b;
+    }
+
+    perimetroRectangulo(a, b){
+        if(a < 0 || b < 0){ return null }
+        return 2 * (a + b);
+    }
 }

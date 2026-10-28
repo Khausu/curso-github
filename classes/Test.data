@@ -163,4 +163,24 @@ class Test {
     probarEsFibonacci(){
         return this.calc.esFibonacci(13) === true && this.calc.esFibonacci(14) === false;
     }
+
+    probarHipotenusa(){
+        return this.calc.hipotenusa(3, 4) === 5;
+    }
+
+    probarAreaCirculo(){
+        return Math.abs(this.calc.areaCirculo(2) - (Math.PI * 4)) < 1e-9;
+    }
+
+    probarPerimetroCirculo(){
+        return Math.abs(this.calc.perimetroCirculo(2) - (4 * Math.PI)) < 1e-9;
+    }
+
+    probarAreaRectangulo(){
+        return this.calc.areaRectangulo(3, 5) === 15;
+    }
+
+    probarPerimetroRectangulo(){
+        return this.calc.perimetroRectangulo(3, 5) === 16;
+    }
 }
