@@ -228,4 +228,9 @@ class Calculadora{
     hipotenusa(a, b){
         return Math.sqrt(a ** 2 + b ** 2);
     }
+
+    areaCirculo(r){
+        if(r < 0){ return null }
+        return Math.PI * r ** 2;
+    }
 }
