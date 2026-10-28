@@ -175,4 +175,8 @@ class Test {
     probarPerimetroCirculo(){
         return Math.abs(this.calc.perimetroCirculo(2) - (4 * Math.PI)) < 1e-9;
     }
+
+    probarAreaRectangulo(){
+        return this.calc.areaRectangulo(3, 5) === 15;
+    }
 }
