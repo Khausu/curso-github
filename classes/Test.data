@@ -179,4 +179,8 @@ class Test {
     probarAreaRectangulo(){
         return this.calc.areaRectangulo(3, 5) === 15;
     }
+
+    probarPerimetroRectangulo(){
+        return this.calc.perimetroRectangulo(3, 5) === 16;
+    }
 }
