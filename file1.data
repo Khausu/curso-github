@@ -233,4 +233,9 @@ class Calculadora{
         if(r < 0){ return null }
         return Math.PI * r ** 2;
     }
+
+    perimetroCirculo(r){
+        if(r < 0){ return null }
+        return 2 * Math.PI * r;
+    }
 }
