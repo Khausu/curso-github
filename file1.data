@@ -253,4 +253,9 @@ class Calculadora{
         if(base < 0 || altura < 0){ return null }
         return base * altura / 2;
     }
+
+    perimetroTriangulo(a, b, c){
+        if(a < 0 || b < 0 || c < 0){ return null }
+        return a + b + c;
+    }
 }
