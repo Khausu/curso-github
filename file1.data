@@ -248,4 +248,9 @@ class Calculadora{
         if(a < 0 || b < 0){ return null }
         return 2 * (a + b);
     }
+
+    areaTriangulo(base, altura){
+        if(base < 0 || altura < 0){ return null }
+        return base * altura / 2;
+    }
 }
