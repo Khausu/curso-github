@@ -191,4 +191,8 @@ class Test {
     probarPerimetroTriangulo(){
         return this.calc.perimetroTriangulo(3, 4, 5) === 12;
     }
+
+    probarAreaTrapecio(){
+        return this.calc.areaTrapecio(4, 6, 3) === 15;
+    }
 }
