@@ -248,4 +248,29 @@ class Calculadora{
         if(a < 0 || b < 0){ return null }
         return 2 * (a + b);
     }
+
+    areaTriangulo(base, altura){
+        if(base < 0 || altura < 0){ return null }
+        return base * altura / 2;
+    }
+
+    perimetroTriangulo(a, b, c){
+        if(a < 0 || b < 0 || c < 0){ return null }
+        return a + b + c;
+    }
+
+    areaTrapecio(b1, b2, altura){
+        if(b1 < 0 || b2 < 0 || altura < 0){ return null }
+        return (b1 + b2) * altura / 2;
+    }
+
+    volumenCubo(lado){
+        if(lado < 0){ return null }
+        return lado ** 3;
+    }
+
+    volumenEsfera(r){
+        if(r < 0){ return null }
+        return (4/3) * Math.PI * r ** 3;
+    }
 }

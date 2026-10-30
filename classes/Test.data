@@ -183,4 +183,24 @@ class Test {
     probarPerimetroRectangulo(){
         return this.calc.perimetroRectangulo(3, 5) === 16;
     }
+
+    probarAreaTriangulo(){
+        return this.calc.areaTriangulo(6, 4) === 12;
+    }
+
+    probarPerimetroTriangulo(){
+        return this.calc.perimetroTriangulo(3, 4, 5) === 12;
+    }
+
+    probarAreaTrapecio(){
+        return this.calc.areaTrapecio(4, 6, 3) === 15;
+    }
+
+    probarVolumenCubo(){
+        return this.calc.volumenCubo(3) === 27;
+    }
+
+    probarVolumenEsfera(){
+        return Math.abs(this.calc.volumenEsfera(3) - (4/3 * Math.PI * 27)) < 1e-9;
+    }
 }
