@@ -195,4 +195,8 @@ class Test {
     probarAreaTrapecio(){
         return this.calc.areaTrapecio(4, 6, 3) === 15;
     }
+
+    probarVolumenCubo(){
+        return this.calc.volumenCubo(3) === 27;
+    }
 }
