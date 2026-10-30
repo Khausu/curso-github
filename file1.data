@@ -268,4 +268,9 @@ class Calculadora{
         if(lado < 0){ return null }
         return lado ** 3;
     }
+
+    volumenEsfera(r){
+        if(r < 0){ return null }
+        return (4/3) * Math.PI * r ** 3;
+    }
 }
