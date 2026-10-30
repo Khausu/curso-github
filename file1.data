@@ -263,4 +263,9 @@ class Calculadora{
         if(b1 < 0 || b2 < 0 || altura < 0){ return null }
         return (b1 + b2) * altura / 2;
     }
+
+    volumenCubo(lado){
+        if(lado < 0){ return null }
+        return lado ** 3;
+    }
 }
