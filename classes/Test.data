@@ -199,4 +199,8 @@ class Test {
     probarVolumenCubo(){
         return this.calc.volumenCubo(3) === 27;
     }
+
+    probarVolumenEsfera(){
+        return Math.abs(this.calc.volumenEsfera(3) - (4/3 * Math.PI * 27)) < 1e-9;
+    }
 }
