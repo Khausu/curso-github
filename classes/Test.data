@@ -203,4 +203,8 @@ class Test {
     probarVolumenEsfera(){
         return Math.abs(this.calc.volumenEsfera(3) - (4/3 * Math.PI * 27)) < 1e-9;
     }
+
+    probarProductoDigitos(){
+        return this.calc.productoDigitos(234) === 24;
+    }
 }
