@@ -207,4 +207,8 @@ class Test {
     probarProductoDigitos(){
         return this.calc.productoDigitos(234) === 24;
     }
+
+    probarContarDigitos(){
+        return this.calc.contarDigitos(12345) === 5;
+    }
 }
