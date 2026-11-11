@@ -219,4 +219,8 @@ class Test {
     probarEsPositivo(){
         return this.calc.esPositivo(3) === true && this.calc.esPositivo(-3) === false;
     }
+
+    probarPromedioGeometrico(){
+        return this.calc.promedioGeometrico(4, 9) === 6;
+    }
 }
