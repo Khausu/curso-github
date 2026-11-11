@@ -273,4 +273,15 @@ class Calculadora{
         if(r < 0){ return null }
         return (4/3) * Math.PI * r ** 3;
     }
+
+    productoDigitos(n){
+        n = Math.abs(Math.trunc(n));
+        if(n === 0){ return 0 }
+        let producto = 1;
+        while(n > 0){
+            producto *= n % 10;
+            n = Math.trunc(n / 10);
+        }
+        return producto;
+    }
 }
