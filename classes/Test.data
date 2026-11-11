@@ -211,4 +211,8 @@ class Test {
     probarContarDigitos(){
         return this.calc.contarDigitos(12345) === 5;
     }
+
+    probarEsNegativo(){
+        return this.calc.esNegativo(-3) === true && this.calc.esNegativo(3) === false;
+    }
 }
