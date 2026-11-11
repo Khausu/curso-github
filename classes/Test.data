@@ -203,4 +203,24 @@ class Test {
     probarVolumenEsfera(){
         return Math.abs(this.calc.volumenEsfera(3) - (4/3 * Math.PI * 27)) < 1e-9;
     }
+
+    probarProductoDigitos(){
+        return this.calc.productoDigitos(234) === 24;
+    }
+
+    probarContarDigitos(){
+        return this.calc.contarDigitos(12345) === 5;
+    }
+
+    probarEsNegativo(){
+        return this.calc.esNegativo(-3) === true && this.calc.esNegativo(3) === false;
+    }
+
+    probarEsPositivo(){
+        return this.calc.esPositivo(3) === true && this.calc.esPositivo(-3) === false;
+    }
+
+    probarPromedioGeometrico(){
+        return this.calc.promedioGeometrico(4, 9) === 6;
+    }
 }

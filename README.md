@@ -16,6 +16,7 @@ La clase `Calculadora` (en `file1.data`) incluye:
 - gradosARadianes, radianesAGrados, permutaciones, combinaciones, esFibonacci
 - hipotenusa, areaCirculo, perimetroCirculo, areaRectangulo, perimetroRectangulo
 - areaTriangulo, perimetroTriangulo, areaTrapecio, volumenCubo, volumenEsfera
+- productoDigitos, contarDigitos, esNegativo, esPositivo, promedioGeometrico
 
 ## Pruebas
 
@@ -28,7 +29,8 @@ invertirNumero, decimalABinario, binarioADecimal, esCuadradoPerfecto,
 sumaDivisores, esNumeroPerfecto, interpolar, limitar, gradosARadianes,
 radianesAGrados, permutaciones, combinaciones, esFibonacci, hipotenusa,
 areaCirculo, perimetroCirculo, areaRectangulo, perimetroRectangulo,
-areaTriangulo, perimetroTriangulo, areaTrapecio, volumenCubo y volumenEsfera.
+areaTriangulo, perimetroTriangulo, areaTrapecio, volumenCubo, volumenEsfera,
+productoDigitos, contarDigitos, esNegativo, esPositivo y promedioGeometrico.
 
 ## Ramas
 
