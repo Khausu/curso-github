@@ -288,4 +288,8 @@ class Calculadora{
     contarDigitos(n){
         return Math.abs(Math.trunc(n)).toString().length;
     }
+
+    esNegativo(n){
+        return n < 0;
+    }
 }
