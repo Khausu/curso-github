@@ -284,4 +284,8 @@ class Calculadora{
         }
         return producto;
     }
+
+    contarDigitos(n){
+        return Math.abs(Math.trunc(n)).toString().length;
+    }
 }
