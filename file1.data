@@ -292,4 +292,8 @@ class Calculadora{
     esNegativo(n){
         return n < 0;
     }
+
+    esPositivo(n){
+        return n > 0;
+    }
 }
