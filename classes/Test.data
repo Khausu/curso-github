@@ -215,4 +215,8 @@ class Test {
     probarEsNegativo(){
         return this.calc.esNegativo(-3) === true && this.calc.esNegativo(3) === false;
     }
+
+    probarEsPositivo(){
+        return this.calc.esPositivo(3) === true && this.calc.esPositivo(-3) === false;
+    }
 }
