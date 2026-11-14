@@ -316,4 +316,9 @@ class Calculadora{
         const media = this.promedio(...nums);
         return nums.reduce((t, n) => t + (n - media) ** 2, 0) / nums.length;
     }
+
+    desviacionEstandar(...nums){
+        const v = this.varianza(...nums);
+        return v === null ? null : Math.sqrt(v);
+    }
 }
