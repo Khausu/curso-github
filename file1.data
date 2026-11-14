@@ -310,4 +310,10 @@ class Calculadora{
     sumaImpares(...nums){
         return nums.filter(n => n % 2 !== 0).reduce((t, n) => t + n, 0);
     }
+
+    varianza(...nums){
+        if(nums.length === 0){ return null }
+        const media = this.promedio(...nums);
+        return nums.reduce((t, n) => t + (n - media) ** 2, 0) / nums.length;
+    }
 }
