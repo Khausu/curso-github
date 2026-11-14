@@ -302,4 +302,8 @@ class Calculadora{
         const producto = nums.reduce((t, n) => t * n, 1);
         return producto ** (1 / nums.length);
     }
+
+    sumaPares(...nums){
+        return nums.filter(n => n % 2 === 0).reduce((t, n) => t + n, 0);
+    }
 }
