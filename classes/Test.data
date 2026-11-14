@@ -223,4 +223,24 @@ class Test {
     probarPromedioGeometrico(){
         return this.calc.promedioGeometrico(4, 9) === 6;
     }
+
+    probarSumaPares(){
+        return this.calc.sumaPares(1, 2, 3, 4, 5, 6) === 12;
+    }
+
+    probarSumaImpares(){
+        return this.calc.sumaImpares(1, 2, 3, 4, 5, 6) === 9;
+    }
+
+    probarVarianza(){
+        return this.calc.varianza(2, 4, 4, 4, 5, 5, 7, 9) === 4;
+    }
+
+    probarDesviacionEstandar(){
+        return this.calc.desviacionEstandar(2, 4, 4, 4, 5, 5, 7, 9) === 2;
+    }
+
+    probarEsArmstrong(){
+        return this.calc.esArmstrong(153) === true && this.calc.esArmstrong(154) === false;
+    }
 }

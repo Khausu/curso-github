@@ -302,4 +302,31 @@ class Calculadora{
         const producto = nums.reduce((t, n) => t * n, 1);
         return producto ** (1 / nums.length);
     }
+
+    sumaPares(...nums){
+        return nums.filter(n => n % 2 === 0).reduce((t, n) => t + n, 0);
+    }
+
+    sumaImpares(...nums){
+        return nums.filter(n => n % 2 !== 0).reduce((t, n) => t + n, 0);
+    }
+
+    varianza(...nums){
+        if(nums.length === 0){ return null }
+        const media = this.promedio(...nums);
+        return nums.reduce((t, n) => t + (n - media) ** 2, 0) / nums.length;
+    }
+
+    desviacionEstandar(...nums){
+        const v = this.varianza(...nums);
+        return v === null ? null : Math.sqrt(v);
+    }
+
+    esArmstrong(n){
+        if(n < 0 || !Number.isInteger(n)){ return false }
+        const digitos = n.toString().split("");
+        const potencia = digitos.length;
+        const suma = digitos.reduce((t, d) => t + Number(d) ** potencia, 0);
+        return suma === n;
+    }
 }
