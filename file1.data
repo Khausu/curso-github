@@ -321,4 +321,12 @@ class Calculadora{
         const v = this.varianza(...nums);
         return v === null ? null : Math.sqrt(v);
     }
+
+    esArmstrong(n){
+        if(n < 0 || !Number.isInteger(n)){ return false }
+        const digitos = n.toString().split("");
+        const potencia = digitos.length;
+        const suma = digitos.reduce((t, d) => t + Number(d) ** potencia, 0);
+        return suma === n;
+    }
 }
