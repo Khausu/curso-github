@@ -239,4 +239,8 @@ class Test {
     probarDesviacionEstandar(){
         return this.calc.desviacionEstandar(2, 4, 4, 4, 5, 5, 7, 9) === 2;
     }
+
+    probarEsArmstrong(){
+        return this.calc.esArmstrong(153) === true && this.calc.esArmstrong(154) === false;
+    }
 }
