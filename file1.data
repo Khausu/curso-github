@@ -306,4 +306,8 @@ class Calculadora{
     sumaPares(...nums){
         return nums.filter(n => n % 2 === 0).reduce((t, n) => t + n, 0);
     }
+
+    sumaImpares(...nums){
+        return nums.filter(n => n % 2 !== 0).reduce((t, n) => t + n, 0);
+    }
 }
