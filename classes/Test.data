@@ -255,4 +255,8 @@ class Test {
     probarEsPotenciaDe(){
         return this.calc.esPotenciaDe(64, 2) === true && this.calc.esPotenciaDe(63, 2) === false;
     }
+
+    probarDiferenciaPorcentual(){
+        return this.calc.diferenciaPorcentual(100, 150) === 50;
+    }
 }
