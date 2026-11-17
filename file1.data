@@ -341,4 +341,12 @@ class Calculadora{
         if(a <= 0 || base <= 0 || base === 1){ return null }
         return Math.log(a) / Math.log(base);
     }
+
+    esPotenciaDe(n, base){
+        if(n <= 0 || base <= 1 || !Number.isInteger(n) || !Number.isInteger(base)){ return false }
+        while(n % base === 0){
+            n = n / base;
+        }
+        return n === 1;
+    }
 }
