@@ -259,4 +259,8 @@ class Test {
     probarDiferenciaPorcentual(){
         return this.calc.diferenciaPorcentual(100, 150) === 50;
     }
+
+    probarNormalizar(){
+        return this.calc.normalizar(5, 0, 10) === 0.5;
+    }
 }
