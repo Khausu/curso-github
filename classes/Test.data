@@ -247,4 +247,8 @@ class Test {
     probarRaizN(){
         return this.calc.raizN(81, 4) === 3;
     }
+
+    probarLogaritmo(){
+        return this.calc.logaritmo(8, 2) === 3;
+    }
 }
