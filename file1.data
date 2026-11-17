@@ -354,4 +354,9 @@ class Calculadora{
         if(a === 0){ return null }
         return (b - a) / Math.abs(a) * 100;
     }
+
+    normalizar(valor, min, max){
+        if(min === max){ return null }
+        return (valor - min) / (max - min);
+    }
 }
