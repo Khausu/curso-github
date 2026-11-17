@@ -243,4 +243,8 @@ class Test {
     probarEsArmstrong(){
         return this.calc.esArmstrong(153) === true && this.calc.esArmstrong(154) === false;
     }
+
+    probarRaizN(){
+        return this.calc.raizN(81, 4) === 3;
+    }
 }
