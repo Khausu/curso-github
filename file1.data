@@ -349,4 +349,9 @@ class Calculadora{
         }
         return n === 1;
     }
+
+    diferenciaPorcentual(a, b){
+        if(a === 0){ return null }
+        return (b - a) / Math.abs(a) * 100;
+    }
 }
