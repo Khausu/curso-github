@@ -329,4 +329,11 @@ class Calculadora{
         const suma = digitos.reduce((t, d) => t + Number(d) ** potencia, 0);
         return suma === n;
     }
+
+    raizN(a, n){
+        if(n === 0){ return null }
+        if(a < 0 && n % 2 === 0){ return null }
+        const signo = a < 0 ? -1 : 1;
+        return signo * Math.abs(a) ** (1 / n);
+    }
 }
