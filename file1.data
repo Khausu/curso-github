@@ -329,4 +329,34 @@ class Calculadora{
         const suma = digitos.reduce((t, d) => t + Number(d) ** potencia, 0);
         return suma === n;
     }
+
+    raizN(a, n){
+        if(n === 0){ return null }
+        if(a < 0 && n % 2 === 0){ return null }
+        const signo = a < 0 ? -1 : 1;
+        return signo * Math.abs(a) ** (1 / n);
+    }
+
+    logaritmo(a, base){
+        if(a <= 0 || base <= 0 || base === 1){ return null }
+        return Math.log(a) / Math.log(base);
+    }
+
+    esPotenciaDe(n, base){
+        if(n <= 0 || base <= 1 || !Number.isInteger(n) || !Number.isInteger(base)){ return false }
+        while(n % base === 0){
+            n = n / base;
+        }
+        return n === 1;
+    }
+
+    diferenciaPorcentual(a, b){
+        if(a === 0){ return null }
+        return (b - a) / Math.abs(a) * 100;
+    }
+
+    normalizar(valor, min, max){
+        if(min === max){ return null }
+        return (valor - min) / (max - min);
+    }
 }
