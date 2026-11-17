@@ -251,4 +251,8 @@ class Test {
     probarLogaritmo(){
         return this.calc.logaritmo(8, 2) === 3;
     }
+
+    probarEsPotenciaDe(){
+        return this.calc.esPotenciaDe(64, 2) === true && this.calc.esPotenciaDe(63, 2) === false;
+    }
 }
