@@ -275,4 +275,8 @@ class Test {
     probarMediana(){
         return this.calc.mediana(1, 3, 2, 5, 4) === 3 && this.calc.mediana(1, 2, 3, 4) === 2.5;
     }
+
+    probarModa(){
+        const r = this.calc.moda(1, 2, 2, 3, 3, 3); return r.length === 1 && r[0] === 3;
+    }
 }
