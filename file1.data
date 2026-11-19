@@ -364,4 +364,10 @@ class Calculadora{
         if(n < 0 || !Number.isInteger(n)){ return null }
         return n * (n + 1) / 2;
     }
+
+    esTriangular(n){
+        if(n < 0 || !Number.isInteger(n)){ return false }
+        const raiz = (Math.sqrt(8 * n + 1) - 1) / 2;
+        return raiz === Math.trunc(raiz);
+    }
 }
