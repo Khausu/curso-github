@@ -263,4 +263,8 @@ class Test {
     probarNormalizar(){
         return this.calc.normalizar(5, 0, 10) === 0.5;
     }
+
+    probarNumeroTriangular(){
+        return this.calc.numeroTriangular(5) === 15;
+    }
 }
