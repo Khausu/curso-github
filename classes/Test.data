@@ -271,4 +271,8 @@ class Test {
     probarEsTriangular(){
         return this.calc.esTriangular(10) === true && this.calc.esTriangular(11) === false;
     }
+
+    probarMediana(){
+        return this.calc.mediana(1, 3, 2, 5, 4) === 3 && this.calc.mediana(1, 2, 3, 4) === 2.5;
+    }
 }
