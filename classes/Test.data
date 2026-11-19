@@ -279,4 +279,8 @@ class Test {
     probarModa(){
         const r = this.calc.moda(1, 2, 2, 3, 3, 3); return r.length === 1 && r[0] === 3;
     }
+
+    probarRangoNumeros(){
+        return this.calc.rangoNumeros(3, 7, 1, 9, 4) === 8;
+    }
 }
