@@ -359,4 +359,9 @@ class Calculadora{
         if(min === max){ return null }
         return (valor - min) / (max - min);
     }
+
+    numeroTriangular(n){
+        if(n < 0 || !Number.isInteger(n)){ return null }
+        return n * (n + 1) / 2;
+    }
 }
