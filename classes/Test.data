@@ -267,4 +267,8 @@ class Test {
     probarNumeroTriangular(){
         return this.calc.numeroTriangular(5) === 15;
     }
+
+    probarEsTriangular(){
+        return this.calc.esTriangular(10) === true && this.calc.esTriangular(11) === false;
+    }
 }
