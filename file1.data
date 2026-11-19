@@ -359,4 +359,42 @@ class Calculadora{
         if(min === max){ return null }
         return (valor - min) / (max - min);
     }
+
+    numeroTriangular(n){
+        if(n < 0 || !Number.isInteger(n)){ return null }
+        return n * (n + 1) / 2;
+    }
+
+    esTriangular(n){
+        if(n < 0 || !Number.isInteger(n)){ return false }
+        const raiz = (Math.sqrt(8 * n + 1) - 1) / 2;
+        return raiz === Math.trunc(raiz);
+    }
+
+    mediana(...nums){
+        if(nums.length === 0){ return null }
+        const ordenados = [...nums].sort((a, b) => a - b);
+        const mitad = Math.floor(ordenados.length / 2);
+        if(ordenados.length % 2 === 0){
+            return (ordenados[mitad - 1] + ordenados[mitad]) / 2;
+        }
+        return ordenados[mitad];
+    }
+
+    moda(...nums){
+        if(nums.length === 0){ return null }
+        const conteo = new Map();
+        for(const n of nums){ conteo.set(n, (conteo.get(n) || 0) + 1); }
+        let maxConteo = 0, resultado = [];
+        for(const [valor, veces] of conteo){
+            if(veces > maxConteo){ maxConteo = veces; resultado = [valor]; }
+            else if(veces === maxConteo){ resultado.push(valor); }
+        }
+        return resultado;
+    }
+
+    rangoNumeros(...nums){
+        if(nums.length === 0){ return null }
+        return this.maximo(...nums) - this.minimo(...nums);
+    }
 }
