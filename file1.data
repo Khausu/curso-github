@@ -370,4 +370,14 @@ class Calculadora{
         const raiz = (Math.sqrt(8 * n + 1) - 1) / 2;
         return raiz === Math.trunc(raiz);
     }
+
+    mediana(...nums){
+        if(nums.length === 0){ return null }
+        const ordenados = [...nums].sort((a, b) => a - b);
+        const mitad = Math.floor(ordenados.length / 2);
+        if(ordenados.length % 2 === 0){
+            return (ordenados[mitad - 1] + ordenados[mitad]) / 2;
+        }
+        return ordenados[mitad];
+    }
 }
