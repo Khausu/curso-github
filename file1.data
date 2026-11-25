@@ -397,4 +397,9 @@ class Calculadora{
         if(nums.length === 0){ return null }
         return this.maximo(...nums) - this.minimo(...nums);
     }
+
+    sumaRango(a, b){
+        if(!Number.isInteger(a) || !Number.isInteger(b) || a > b){ return null }
+        return (b - a + 1) * (a + b) / 2;
+    }
 }
