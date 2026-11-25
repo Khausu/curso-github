@@ -283,4 +283,8 @@ class Test {
     probarRangoNumeros(){
         return this.calc.rangoNumeros(3, 7, 1, 9, 4) === 8;
     }
+
+    probarSumaRango(){
+        return this.calc.sumaRango(1, 5) === 15;
+    }
 }
