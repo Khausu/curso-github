@@ -413,4 +413,14 @@ class Calculadora{
     esMultiploComun(n, a, b){
         return this.esDivisible(n, a) && this.esDivisible(n, b);
     }
+
+    esNumeroFeliz(n){
+        if(n < 1 || !Number.isInteger(n)){ return false }
+        const vistos = new Set();
+        while(n !== 1 && !vistos.has(n)){
+            vistos.add(n);
+            n = n.toString().split("").reduce((t, d) => t + Number(d) ** 2, 0);
+        }
+        return n === 1;
+    }
 }
