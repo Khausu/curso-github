@@ -409,4 +409,8 @@ class Calculadora{
         for(let i = a; i <= b; i++){ producto *= i; }
         return producto;
     }
+
+    esMultiploComun(n, a, b){
+        return this.esDivisible(n, a) && this.esDivisible(n, b);
+    }
 }
