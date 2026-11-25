@@ -291,4 +291,8 @@ class Test {
     probarProductoRango(){
         return this.calc.productoRango(2, 5) === 120;
     }
+
+    probarEsMultiploComun(){
+        return this.calc.esMultiploComun(12, 3, 4) === true && this.calc.esMultiploComun(10, 3, 4) === false;
+    }
 }
