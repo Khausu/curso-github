@@ -287,4 +287,8 @@ class Test {
     probarSumaRango(){
         return this.calc.sumaRango(1, 5) === 15;
     }
+
+    probarProductoRango(){
+        return this.calc.productoRango(2, 5) === 120;
+    }
 }
