@@ -402,4 +402,11 @@ class Calculadora{
         if(!Number.isInteger(a) || !Number.isInteger(b) || a > b){ return null }
         return (b - a + 1) * (a + b) / 2;
     }
+
+    productoRango(a, b){
+        if(!Number.isInteger(a) || !Number.isInteger(b) || a > b){ return null }
+        let producto = 1;
+        for(let i = a; i <= b; i++){ producto *= i; }
+        return producto;
+    }
 }
