@@ -397,4 +397,35 @@ class Calculadora{
         if(nums.length === 0){ return null }
         return this.maximo(...nums) - this.minimo(...nums);
     }
+
+    sumaRango(a, b){
+        if(!Number.isInteger(a) || !Number.isInteger(b) || a > b){ return null }
+        return (b - a + 1) * (a + b) / 2;
+    }
+
+    productoRango(a, b){
+        if(!Number.isInteger(a) || !Number.isInteger(b) || a > b){ return null }
+        let producto = 1;
+        for(let i = a; i <= b; i++){ producto *= i; }
+        return producto;
+    }
+
+    esMultiploComun(n, a, b){
+        return this.esDivisible(n, a) && this.esDivisible(n, b);
+    }
+
+    esNumeroFeliz(n){
+        if(n < 1 || !Number.isInteger(n)){ return false }
+        const vistos = new Set();
+        while(n !== 1 && !vistos.has(n)){
+            vistos.add(n);
+            n = n.toString().split("").reduce((t, d) => t + Number(d) ** 2, 0);
+        }
+        return n === 1;
+    }
+
+    esPalindromoBinario(n){
+        const bin = this.decimalABinario(n);
+        return bin !== null && bin === bin.split("").reverse().join("");
+    }
 }

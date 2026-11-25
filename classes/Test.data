@@ -283,4 +283,24 @@ class Test {
     probarRangoNumeros(){
         return this.calc.rangoNumeros(3, 7, 1, 9, 4) === 8;
     }
+
+    probarSumaRango(){
+        return this.calc.sumaRango(1, 5) === 15;
+    }
+
+    probarProductoRango(){
+        return this.calc.productoRango(2, 5) === 120;
+    }
+
+    probarEsMultiploComun(){
+        return this.calc.esMultiploComun(12, 3, 4) === true && this.calc.esMultiploComun(10, 3, 4) === false;
+    }
+
+    probarEsNumeroFeliz(){
+        return this.calc.esNumeroFeliz(19) === true && this.calc.esNumeroFeliz(4) === false;
+    }
+
+    probarEsPalindromoBinario(){
+        return this.calc.esPalindromoBinario(9) === true && this.calc.esPalindromoBinario(10) === false;
+    }
 }
