@@ -423,4 +423,9 @@ class Calculadora{
         }
         return n === 1;
     }
+
+    esPalindromoBinario(n){
+        const bin = this.decimalABinario(n);
+        return bin !== null && bin === bin.split("").reverse().join("");
+    }
 }
