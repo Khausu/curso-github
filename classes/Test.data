@@ -319,4 +319,8 @@ class Test {
     probarNumeroPentagonal(){
         return this.calc.numeroPentagonal(4) === 22;
     }
+
+    probarEsPentagonal(){
+        return this.calc.esPentagonal(22) === true && this.calc.esPentagonal(23) === false;
+    }
 }
