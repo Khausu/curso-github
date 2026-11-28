@@ -311,4 +311,8 @@ class Test {
     probarMagnitudVector(){
         return this.calc.magnitudVector(3, 4) === 5;
     }
+
+    probarProductoEscalar(){
+        return this.calc.productoEscalar([1, 2, 3], [4, 5, 6]) === 32;
+    }
 }
