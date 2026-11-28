@@ -436,4 +436,9 @@ class Calculadora{
     magnitudVector(x, y){
         return Math.sqrt(x ** 2 + y ** 2);
     }
+
+    productoEscalar(a, b){
+        if(a.length !== b.length){ return null }
+        return a.reduce((t, v, i) => t + v * b[i], 0);
+    }
 }
