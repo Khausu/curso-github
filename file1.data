@@ -441,4 +441,9 @@ class Calculadora{
         if(a.length !== b.length){ return null }
         return a.reduce((t, v, i) => t + v * b[i], 0);
     }
+
+    numeroPentagonal(n){
+        if(n < 0 || !Number.isInteger(n)){ return null }
+        return n * (3 * n - 1) / 2;
+    }
 }
