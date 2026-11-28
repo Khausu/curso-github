@@ -21,6 +21,7 @@ La clase `Calculadora` (en `file1.data`) incluye:
 - raizN, logaritmo, esPotenciaDe, diferenciaPorcentual, normalizar
 - numeroTriangular, esTriangular, mediana, moda, rangoNumeros
 - sumaRango, productoRango, esMultiploComun, esNumeroFeliz, esPalindromoBinario
+- distanciaEuclidiana, magnitudVector, productoEscalar, numeroPentagonal, esPentagonal
 
 ## Pruebas
 
@@ -38,7 +39,8 @@ productoDigitos, contarDigitos, esNegativo, esPositivo, promedioGeometrico,
 sumaPares, sumaImpares, varianza, desviacionEstandar, esArmstrong, raizN,
 logaritmo, esPotenciaDe, diferenciaPorcentual, normalizar, numeroTriangular,
 esTriangular, mediana, moda, rangoNumeros, sumaRango, productoRango,
-esMultiploComun, esNumeroFeliz y esPalindromoBinario.
+esMultiploComun, esNumeroFeliz, esPalindromoBinario, distanciaEuclidiana,
+magnitudVector, productoEscalar, numeroPentagonal y esPentagonal.
 
 ## Ramas
 

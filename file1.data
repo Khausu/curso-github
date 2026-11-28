@@ -428,4 +428,28 @@ class Calculadora{
         const bin = this.decimalABinario(n);
         return bin !== null && bin === bin.split("").reverse().join("");
     }
+
+    distanciaEuclidiana(x1, y1, x2, y2){
+        return Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2);
+    }
+
+    magnitudVector(x, y){
+        return Math.sqrt(x ** 2 + y ** 2);
+    }
+
+    productoEscalar(a, b){
+        if(a.length !== b.length){ return null }
+        return a.reduce((t, v, i) => t + v * b[i], 0);
+    }
+
+    numeroPentagonal(n){
+        if(n < 0 || !Number.isInteger(n)){ return null }
+        return n * (3 * n - 1) / 2;
+    }
+
+    esPentagonal(n){
+        if(n < 0 || !Number.isInteger(n)){ return false }
+        const raiz = (1 + Math.sqrt(1 + 24 * n)) / 6;
+        return raiz === Math.trunc(raiz);
+    }
 }

@@ -303,4 +303,24 @@ class Test {
     probarEsPalindromoBinario(){
         return this.calc.esPalindromoBinario(9) === true && this.calc.esPalindromoBinario(10) === false;
     }
+
+    probarDistanciaEuclidiana(){
+        return this.calc.distanciaEuclidiana(0, 0, 3, 4) === 5;
+    }
+
+    probarMagnitudVector(){
+        return this.calc.magnitudVector(3, 4) === 5;
+    }
+
+    probarProductoEscalar(){
+        return this.calc.productoEscalar([1, 2, 3], [4, 5, 6]) === 32;
+    }
+
+    probarNumeroPentagonal(){
+        return this.calc.numeroPentagonal(4) === 22;
+    }
+
+    probarEsPentagonal(){
+        return this.calc.esPentagonal(22) === true && this.calc.esPentagonal(23) === false;
+    }
 }
