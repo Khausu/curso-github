@@ -303,4 +303,8 @@ class Test {
     probarEsPalindromoBinario(){
         return this.calc.esPalindromoBinario(9) === true && this.calc.esPalindromoBinario(10) === false;
     }
+
+    probarDistanciaEuclidiana(){
+        return this.calc.distanciaEuclidiana(0, 0, 3, 4) === 5;
+    }
 }
