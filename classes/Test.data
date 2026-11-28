@@ -315,4 +315,8 @@ class Test {
     probarProductoEscalar(){
         return this.calc.productoEscalar([1, 2, 3], [4, 5, 6]) === 32;
     }
+
+    probarNumeroPentagonal(){
+        return this.calc.numeroPentagonal(4) === 22;
+    }
 }
