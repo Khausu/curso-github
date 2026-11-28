@@ -446,4 +446,10 @@ class Calculadora{
         if(n < 0 || !Number.isInteger(n)){ return null }
         return n * (3 * n - 1) / 2;
     }
+
+    esPentagonal(n){
+        if(n < 0 || !Number.isInteger(n)){ return false }
+        const raiz = (1 + Math.sqrt(1 + 24 * n)) / 6;
+        return raiz === Math.trunc(raiz);
+    }
 }
