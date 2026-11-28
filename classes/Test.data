@@ -307,4 +307,8 @@ class Test {
     probarDistanciaEuclidiana(){
         return this.calc.distanciaEuclidiana(0, 0, 3, 4) === 5;
     }
+
+    probarMagnitudVector(){
+        return this.calc.magnitudVector(3, 4) === 5;
+    }
 }
